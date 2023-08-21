@@ -255,6 +255,8 @@ a {
     color: #08b9f7;
     transition: .3s;
     font-weight: 500;
+    border-radius: 45px;
+    overflow: hidden;
 }
 
 .header__menu ul li:last-child a:before {
@@ -332,11 +334,12 @@ a {
     top: -200px;
     width: 600px;
     height: 600px;
-    background-color: #f74008;
+    background-color: #08b9f7;
     border-radius: 50%;
     content: "";
     z-index: -1;
     filter: blur(120px);
+    opacity: .5;
 }
 
 .modal-header h5 {
@@ -691,7 +694,7 @@ a {
 }
 
 .service__content__blk {
-    background: linear-gradient(to bottom, #BC45F6, #3100FF);
+    background: linear-gradient(to bottom, #3100FF, #BC45F6);
     padding: 40px 30px;
     border-radius: 30px;
     position: relative;
@@ -703,7 +706,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, .2);
     border-radius: 10px;
     text-align: center;
     padding: 10px;
@@ -711,7 +714,7 @@ a {
 
 .service__subtitle h4 {
     margin-bottom: 0;
-    color: #5300FB;
+    color: #fff;
     text-transform: capitalize;
     font-size: 30px;
 }
@@ -720,7 +723,7 @@ a {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, .2);
     border-radius: 10px;
     display: grid;
     padding: 40px;
@@ -741,7 +744,7 @@ a {
     gap: 7px;
     font-size: 20px;
     font-weight: 400;
-    color: #333;
+    color: #fff;
     margin-bottom: 5px;
 }
 
@@ -750,7 +753,7 @@ a {
 }
 
 .service__info ul li i {
-    color: #6319FC;
+    color: #08B9F7;
 }
 
 .service__video {
@@ -775,25 +778,6 @@ a {
 
 .service__video a:hover {
     color: #3100FF;
-}
-
-.service__dots {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.service__dots span {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: .4;
-}
-
-.service__dots span.active {
-    opacity: 1;
 }
 
 .service__sp1 {
@@ -853,6 +837,37 @@ a {
     background-color: #ff0000;
 }
 
+.service__main__blk .fade {
+    transition: none;
+}
+
+.service__main__blk .fade:not(.show) {
+    opacity: 1;
+}
+
+.service__main__slider .owl-dots button {
+    width: 16px;
+    height: 16px;
+    background-color: #fff !important;
+    border-radius: 50%;
+    opacity: .5;
+    transition: .4s;
+}
+
+.service__main__slider .owl-dots button:hover {
+    opacity: 1;
+}
+
+.service__main__slider .owl-dots button.active {
+    opacity: 1;
+}
+
+.service__main__slider .owl-dots {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
 /*-------------------- Service area css end --------------------*/
 
 
@@ -861,6 +876,25 @@ a {
 .feature__area {
     padding-top: 60px;
     padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+    background-color: #070946;
+}
+
+.feature__sp {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    opacity: .6;
+}
+
+.feature__sp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .feature__topbar {
@@ -910,6 +944,7 @@ a {
     background-color: rgba(255, 255, 255, .1);
     border-radius: 14px;
     overflow: hidden;
+    backdrop-filter: blur(4px);
 }
 
 .feature__subtitle {
@@ -1085,8 +1120,9 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
-    border-radius: 10px;
-    border: 4px solid #fff;
+    border-radius: 40px 0px 40px 0px;
+    border: 6px solid #633ae5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
 .testimonial__img__blk img {
@@ -1102,11 +1138,11 @@ a {
 .testimonial__content h4 {
     margin-bottom: 24px;
     font-size: 28px;
-    color: #00023E;
+    color: #fff;
 }
 
 .testimonial__content p {
-    color: #00023E;
+    color: #fff;
     margin-bottom: 0;
 }
 
@@ -1116,7 +1152,7 @@ a {
     bottom: 0;
     width: 100%;
     height: 70%;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, .1);
     content: "";
     z-index: -1;
     border-radius: 10px;
@@ -1157,7 +1193,7 @@ a {
 }
 
 .faq__main__blk .accordion {
-    background: linear-gradient(to bottom, #BC45F6, #3100FF);
+    background-color: transparent;
 }
 
 .faq__main__blk .accordion-item {
@@ -1207,10 +1243,15 @@ a {
     filter: brightness(100) grayscale(100);
 }
 
+.faq__main__blk .accordion-body {
+    background-color: rgba(255, 255, 255, .1);
+}
+
 .faq__main__blk .accordion-body p {
     font-size: 16px;
     margin-bottom: 0;
     color: #fff;
+    text-align: justify;
 }
 
 /*-------------------- FAQ area css end --------------------*/
@@ -1237,15 +1278,17 @@ a {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
 }
 
 .contact__address ul li {
     display: flex;
     align-items: flex-start;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    margin-bottom: 15px;
 }
 
 .contact__address ul li span {
@@ -1263,32 +1306,44 @@ a {
 .contact__map iframe {
     width: 100%;
     height: 300px;
+    border-radius: 10px;
+}
+
+.contact__left__blk {
+    background-color: rgba(255, 255, 255, .1);
+    padding: 30px;
+    border-radius: 10px;
 }
 
 .contact__address {
-    margin-bottom: 25px;
+    margin-top: 20px;
 }
 
-
-
-.form-floating {
-    margin-bottom: 15px;
+.contact__form .form-control {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border: none;
+    transition: .5s;
 }
 
-.form-control:focus {
-    color: #212529;
-    background-color: #fff;
+.contact__form .form-floating>label {
+    color: #fff;
+}
+
+.contact__form .form-floating {
+    margin-bottom: 24px;
+}
+
+.contact__form .form-control:focus {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .2);
     border-color: transparent;
     outline: 0;
     box-shadow: none;
 }
 
-.form-control {
-    border: none;
-}
-
-textarea.form-control {
-    min-height: 200px;
+.contact__form textarea.form-control {
+    min-height: 250px;
     resize: none;
 }
 
@@ -1298,7 +1353,7 @@ textarea.form-control {
     border: none;
     outline: none;
     border-radius: 4px;
-    color: #212529;
+    color: #fff;
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 400;
@@ -1306,6 +1361,7 @@ textarea.form-control {
     position: relative;
     z-index: 1;
     overflow: hidden;
+    background-color: #08b9f7;
 }
 
 .contact__form button::after {
@@ -1325,7 +1381,7 @@ textarea.form-control {
 }
 
 .contact__form button:hover {
-    background-color: #08b9f7;
+    background-color: #633ae5;
     color: #fff;
 }
 
@@ -1335,7 +1391,7 @@ textarea.form-control {
 /*-------------------- Footer area css start --------------------*/
 
 .footer__area {
-    background-color: #fff;
+    background-color: #633ae5;
     padding: 10px 0px;
 }
 
@@ -1351,7 +1407,7 @@ textarea.form-control {
 }
 
 .footer__copy span {
-    color: #5B5B5B;
+    color: #fff;
     font-size: 16px;
     font-weight: 400;
 }
@@ -1363,7 +1419,7 @@ textarea.form-control {
 }
 
 .footer__social a {
-    color: #3F07FE;
+    color: #fff;
     font-size: 22px;
     transition: .3s;
 }
