@@ -247,7 +247,7 @@ a {
 
 .header__menu ul li:last-child a {
     width: 150px;
-    height: 52px;
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -580,6 +580,40 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+}
+
+.hero__scroll {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    z-index: 1;
+}
+
+.hero__scroll a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    writing-mode: sideways-rl;
+    transition: .3s;
+}
+
+.hero__scroll a img {
+    filter: brightness(100);
+    width: 30px;
+    transition: .3s;
+}
+
+.hero__scroll a:hover {
+    color: #08b9f7;
+}
+
+.hero__scroll a:hover img {
+    filter: invert(55%) sepia(69%) saturate(1578%) hue-rotate(157deg) brightness(99%) contrast(96%);
 }
 
 .hero__content h1 {
@@ -1391,8 +1425,8 @@ a {
 /*-------------------- Footer area css start --------------------*/
 
 .footer__area {
-    background-color: #633ae5;
-    padding: 10px 0px;
+    background-color: transparent;
+    padding-bottom: 30px;
 }
 
 .footer__main__blk {
@@ -1400,6 +1434,9 @@ a {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    background-color: #633ae547;
+    padding: 10px 40px;
+    border-radius: 100px;
 }
 
 .footer__logo a svg {
