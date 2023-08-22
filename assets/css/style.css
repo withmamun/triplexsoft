@@ -631,6 +631,7 @@ a {
 
 .hero__content p {
     margin-bottom: 0;
+    text-align: justify;
 }
 
 .hero__widgets {

@@ -70,10 +70,7 @@
             margin: 20,
             nav: false,
             dot: true,
-            autoplay: true,
             smartSpeed: 1000,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: true,
             responsive: {
                 0: {
                     items: 1
