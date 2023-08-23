@@ -1146,6 +1146,7 @@ a {
     position: relative;
     z-index: 1;
     padding: 40px;
+    min-height: 470px;
 }
 
 .testimonial__img__blk {
