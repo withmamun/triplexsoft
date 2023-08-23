@@ -849,23 +849,24 @@
                                 </div>
                             </div>
                             <div class="contact__right__blk">
-                                <form action="">
+                                <form action="" class="contact--form" id="contact-form">
                                     <div class="contact__form">
                                         <div class="form-floating">
                                             <input type="text" class="form-control" id="floatingInput"
-                                                placeholder="Enter your name">
+                                                placeholder="Enter your name" name="user_name">
                                             <label for="floatingInput">Your Name</label>
                                         </div>
                                         <div class="form-floating">
                                             <input type="email" class="form-control" id="floatingInput2"
-                                                placeholder="Enter your email">
+                                                placeholder="Enter your email" name="user_email">
                                             <label for="floatingInput2">Your Email</label>
                                         </div>
                                         <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Your message here"
-                                                id="floatingTextarea"></textarea>
+                                            <textarea class="form-control" name="user_project"
+                                                placeholder="Your message here" id="floatingTextarea"></textarea>
                                             <label for="floatingTextarea">Your Message</label>
                                         </div>
+                                        <p class="contact--message" id="contact-message"></p>
                                         <button type="submit">Send Message</button>
                                     </div>
                                 </form>
@@ -938,7 +939,7 @@
                             </a>
                         </div>
                         <div class="footer__copy">
-                            <span>Copyright © 2023 Triplexsoft. All right reserved | Sitemap</span>
+                            <span>Copyright © 2023 Triplexsoft. All right reserved.</span>
                         </div>
                         <div class="footer__social">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -1004,6 +1005,7 @@
     <script src="assets/js/venobox.min.js"></script>
     <script src="assets/js/jquery.scrollUp.min.js"></script>
     <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/email.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
         $(document).ready(function () {
@@ -1070,6 +1072,50 @@
             TagCanvas.Start('exampleCanvas', 'extags', o);
 
         }
+    </script>
+
+    <script>
+        const contactForm = document.getElementById('contact-form'),
+            contactName = document.getElementById('floatingInput'),
+            contactEmail = document.getElementById('floatingInput2'),
+            contactProject = document.getElementById('floatingTextarea'),
+            contactMessage = document.getElementById('contact-message')
+
+        const sendEmail = (e) => {
+            e.preventDefault()
+            // check if the field has value
+            if (contactName.value === '' || contactEmail.value === '' || contactProject.value === '') {
+                // Add and remove color
+                contactMessage.classList.remove('color-green')
+                contactMessage.classList.add('color-red')
+
+                // show message
+                contactMessage.textContent = 'Write all the input fields 📩'
+            } else {
+                // serviceID - templateID - #form - publicKey
+                emailjs.sendForm('service_i82ywnq', 'template_ub3uk0q', '#contact-form', 'W112AhnBud0xrbLqJ')
+                    .then(() => {
+                        // Show message and add color
+                        contactMessage.classList.add('color-green')
+                        contactMessage.textContent = 'Message sent ✅'
+
+                        // Remove message after five seconds
+
+                        setTimeout(() => {
+                            contactMessage.textContent = ''
+                        }, 3000)
+
+                    }, (error) => {
+                        alert('OOPS! SOMETHING HAS FAILED...', error)
+                    })
+                // To clear the input field
+                contactName.value = ''
+                contactEmail.value = ''
+                contactProject.value = ''
+            }
+
+        }
+        contactForm.addEventListener('submit', sendEmail)
     </script>
 
 </body>

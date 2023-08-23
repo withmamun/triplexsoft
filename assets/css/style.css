@@ -1420,6 +1420,20 @@ a {
     color: #fff;
 }
 
+.contact--message {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.color-green {
+    color: #1bfa4e;
+}
+
+.color-red {
+    color: var(--red);
+}
+
 /*-------------------- Contact area css end --------------------*/
 
 
