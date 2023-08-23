@@ -85,6 +85,31 @@
         })
 
 
+        //------------ Brand slider -------------
+
+        $('.brand__main__slider').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            dot: false,
+            autoplay: true,
+            smartSpeed: 1000,
+            autoplayTimeout: 2500,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 4
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+
+
 
         //--- Venobox service -----
 

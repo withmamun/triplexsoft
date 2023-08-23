@@ -700,10 +700,52 @@ a {
 /*-------------------- Hero area css end --------------------*/
 
 
+/*-------------------- Brand area css start --------------------*/
+
+.brand__single__slide img {
+    max-height: 100%;
+    width: auto !important;
+    filter: grayscale(100);
+    opacity: .7;
+}
+
+.brand__single__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    padding: 18px;
+}
+
+.brand__main__slider::after {
+    position: absolute;
+    left: -4px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    z-index: 3;
+    background: linear-gradient(to right, #00023E, transparent);
+    content: "";
+}
+
+.brand__main__slider::before {
+    position: absolute;
+    right: -4px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    z-index: 3;
+    background: linear-gradient(to right, transparent, #00023E);
+    content: "";
+}
+
+/*-------------------- Brand area css end --------------------*/
+
+
 /*-------------------- Service area css start --------------------*/
 
 .service__area {
-    padding-top: 120px;
+    padding-top: 75px;
     padding-bottom: 100px;
     position: relative;
     z-index: 1;
@@ -713,7 +755,7 @@ a {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -50px;
+    top: -130px;
     z-index: -1;
     max-width: 820px;
 }
