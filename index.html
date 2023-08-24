@@ -191,7 +191,6 @@
         </section>
         <!--------- Hero area end --------->
 
-
         <!--------- Brand area start --------->
         <section class="brand__area">
             <div class="container">
@@ -1033,20 +1032,23 @@
                             class="fal fa-window-close"></i></button>
                 </div>
                 <div class="modal-body">
-                    <form action="">
+                    <form action="" id="contact-form2">
                         <div class="modal__main__form">
-                            <input type="text" placeholder="Enter your name">
-                            <input type="email" placeholder="Enter your email">
+                            <input type="text" placeholder="Enter your name" id="modal__text" name="user-name">
+                            <input type="email" placeholder="Enter your email" id="modal__email" name="user-email">
                             <div class="modal__select">
                                 <span><i class="far fa-chevron-down"></i></span>
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" id="modal__select" name="modal-select"
+                                    aria-label="Default select example">
                                     <option selected>Select your service</option>
-                                    <option value="1">Web Development</option>
-                                    <option value="2">Graphics Design</option>
-                                    <option value="3">Digital Marketing</option>
+                                    <option value="Web Development">Web Development</option>
+                                    <option value="Graphics Design">Graphics Design</option>
+                                    <option value="Digital Marketing">Digital Marketing</option>
                                 </select>
                             </div>
-                            <textarea placeholder="Write your message" cols="30" rows="10"></textarea>
+                            <textarea placeholder="Write your message" id="modal__textarea" cols="30" rows="10"
+                                name="user-message"></textarea>
+                            <p id="modal__message" class="modal-message"></p>
                             <button type="submit">send message</button>
                         </div>
                     </form>
@@ -1186,6 +1188,51 @@
         contactForm.addEventListener('submit', sendEmail)
     </script>
 
+    <script>
+        const contactForm2 = document.getElementById('contact-form2'),
+            contactName2 = document.getElementById('modal__text'),
+            contactEmail2 = document.getElementById('modal__email'),
+            contactSelect = document.getElementById('modal__select'),
+            contactProject2 = document.getElementById('modal__textarea'),
+            contactMessage2 = document.getElementById('modal__message')
+
+        const sendEmail2 = (e) => {
+            e.preventDefault()
+            // check if the field has value
+            if (contactName2.value === '' || contactEmail2.value === '' || contactSelect.value === '' || contactProject2.value === '') {
+                // Add and remove color
+                contactMessage2.classList.remove('color-green')
+                contactMessage2.classList.add('color-red')
+
+                // show message
+                contactMessage2.textContent = 'Write all the input fields 📩'
+            } else {
+                // serviceID - templateID - #form - publicKey
+                emailjs.sendForm('service_i82ywnq', 'template_zrb941i', '#contact-form2', 'W112AhnBud0xrbLqJ')
+                    .then(() => {
+                        // Show message and add color
+                        contactMessage2.classList.add('color-green')
+                        contactMessage2.textContent = 'Message sent ✅'
+
+                        // Remove message after five seconds
+
+                        setTimeout(() => {
+                            contactMessage2.textContent = ''
+                        }, 3000)
+
+                    }, (error) => {
+                        alert('OOPS! SOMETHING HAS FAILED...', error)
+                    })
+                // To clear the input field
+                contactName2.value = ''
+                contactEmail2.value = ''
+                contactSelect.value = ''
+                contactProject2.value = ''
+            }
+
+        }
+        contactForm2.addEventListener('submit', sendEmail2)
+    </script>
 </body>
 
 </html>

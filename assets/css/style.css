@@ -1469,6 +1469,12 @@ a {
     margin-bottom: 20px;
 }
 
+.modal-message {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
 .color-green {
     color: #1bfa4e;
 }
