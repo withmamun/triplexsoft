@@ -846,7 +846,7 @@ a {
     height: 100%;
     border-radius: 10px;
     overflow: hidden;
-    background-image: url(../img/service/video_thumb.jpg);
+    background-image: url(../img/service/thumb.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
