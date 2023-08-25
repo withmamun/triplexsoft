@@ -556,7 +556,7 @@ a {
     height: 100%;
     z-index: -3;
     content: "";
-    background-image: url(../img/hero/h3.jpg);
+    background-image: url(../img/hero/triplexsoft.jpg);
     background-size: cover;
     background-position: center;
     filter: grayscale(100);
@@ -702,6 +702,10 @@ a {
 
 /*-------------------- Brand area css start --------------------*/
 
+.brand__area .container {
+    max-width: 1000px;
+}
+
 .brand__single__slide img {
     max-height: 100%;
     width: auto !important;
@@ -737,6 +741,10 @@ a {
     z-index: 3;
     background: linear-gradient(to right, transparent, #00023E);
     content: "";
+}
+
+.brand__main__slider .owl-dots {
+    display: none;
 }
 
 /*-------------------- Brand area css end --------------------*/
