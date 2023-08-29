@@ -10,6 +10,233 @@
         max-width: 1140px;
     }
 
+    #scrollUp {
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+        font-size: 23px;
+    }
+
+    .header__area {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .header__menu ul li a {
+        font-size: 14px;
+    }
+
+    .header__menu ul {
+        gap: 26px;
+    }
+
+    .header__menu ul li:last-child a {
+        width: 140px;
+        height: 44px;
+    }
+
+    .header__logo a svg {
+        width: 144px;
+    }
+
+    .hero__content h1 {
+        margin-bottom: 10px;
+        font-size: 58px;
+    }
+
+    .hero__content p {
+        font-size: 14px;
+    }
+
+    #exampleCanvas {
+        width: 450px !important;
+    }
+
+    .hero__scroll a {
+        font-size: 14px;
+    }
+
+    .hero__scroll a img {
+        width: 27px;
+    }
+
+    .hero__btn a {
+        width: 154px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .hero__widgets {
+        margin-top: 30px;
+        gap: 22px;
+    }
+
+    .hero__right__blk {
+        top: -25px;
+    }
+
+    .hero__area {
+        padding-top: 150px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 40px;
+    }
+
+    .service__main__blk .nav-link img {
+        width: 54px;
+    }
+
+    .service__subtitle h4 {
+        font-size: 24px;
+    }
+
+    .service__info ul li {
+        font-size: 16px;
+    }
+
+    .service__main__slider .owl-dots button {
+        width: 12px;
+        height: 12px;
+    }
+
+    .feature__topbar p {
+        font-size: 14px;
+    }
+
+    .feature__subtitle h4 {
+        font-size: 20px;
+    }
+
+    .feature__subtitle {
+        padding: 20px;
+    }
+
+    .feature__content p {
+        font-size: 14px;
+    }
+
+    .feature__area .container {
+        max-width: 900px;
+    }
+
+    .feature__title::after {
+        height: 3px;
+    }
+
+    .portfolio__title h4 {
+        font-size: 28px;
+    }
+
+    .portfolio__icon img {
+        width: 70px;
+    }
+
+    .portfolio__single__slide {
+        height: 170px;
+    }
+
+    .testimonial__content p {
+        font-size: 12px;
+    }
+
+    .testimonial__content h4 {
+        margin-bottom: 16px;
+        font-size: 22px;
+    }
+
+    .testimonial__img__blk {
+        width: 120px;
+        height: 140px;
+        border: 3px solid #633ae5;
+    }
+
+    .testimonial__single__slide {
+        padding: 24px;
+        min-height: 360px;
+    }
+
+    .testimonial__main__slider .owl-dots button {
+        width: 12px;
+        height: 12px;
+    }
+
+    .testimonial__main__slider .owl-dots {
+        margin-top: 24px;
+    }
+
+    .portfolio__single__slide a span {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .faq__main__blk .accordion-body p {
+        font-size: 12px;
+    }
+
+    .faq__main__blk .accordion-button {
+        font-size: 14px;
+    }
+
+    .faq__area .container {
+        max-width: 900px;
+    }
+
+    .contact__left__blk {
+        padding: 22px;
+    }
+
+    .contact__address ul li {
+        font-size: 12px;
+    }
+
+    .contact__address ul li span {
+        min-width: 60px;
+    }
+
+    .contact__form .form-floating>label {
+        font-size: 14px;
+    }
+
+    .contact__form .form-control {
+        font-size: 14px;
+    }
+
+    .footer__copy span {
+        font-size: 14px;
+    }
+
+    .footer__logo a svg {
+        width: 130px;
+    }
+
+    .footer__social a {
+        font-size: 18px;
+    }
+
+    .footer__main__blk {
+        padding: 4px 40px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
