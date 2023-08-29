@@ -224,6 +224,33 @@
         padding: 4px 40px;
     }
 
+    .service__area {
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+
+    .feature__area {
+        padding-bottom: 75px;
+    }
+
+    .portfolio__area {
+        padding-bottom: 50px;
+    }
+
+    .testimonial__area {
+        padding-bottom: 45px;
+    }
+
+    .faq__area {
+        padding-bottom: 30px;
+    }
+
+
+
+
+
+
+
 
 
 
