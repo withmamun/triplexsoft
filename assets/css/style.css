@@ -1510,7 +1510,7 @@ a {
     gap: 20px;
     background-color: #633ae547;
     padding: 10px 40px;
-    border-radius: 100px;
+    border-radius: 10px;
 }
 
 .footer__logo a svg {
