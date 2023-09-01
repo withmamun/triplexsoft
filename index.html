@@ -29,14 +29,16 @@
         </div>
         <div class="offcanvas-menu">
             <div class="main-menu">
-                <ul class="d-block">
-                    <li><a href=""><span>01.</span> OGA</a></li>
-                    <li><a href=""><span>02.</span> Roadmap</a></li>
-                    <li><a href=""><span>03.</span> Team</a></li>
-                    <li><a href=""><span>04.</span> Docs</a></li>
+                <ul id="nav2">
+                    <li class="active"><a href="index.html"><span></span>home</a></li>
+                    <li><a href="#service"><span></span>Services</a></li>
+                    <li><a href="#feature"><span></span>Features</a></li>
+                    <li><a href="#testimonial"><span></span>Testimonials</a></li>
+                    <li><a href="#faq"><span></span>FAQ</a></li>
+                    <li><a href="#contact"><span></span>Enquiry</a></li>
                 </ul>
                 <div class="offcanvas-btn text-center">
-                    <a href="#">Join us</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Started</a>
                 </div>
             </div>
         </div>
@@ -112,6 +114,9 @@
                                 <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Started</a>
                                 </li>
                             </ul>
+                        </div>
+                        <div class="menu-open">
+                            <span><i class="fas fa-bars"></i></span>
                         </div>
                     </div>
                 </div>
@@ -1237,6 +1242,14 @@
     <script>
         $(document).ready(function () {
             $('#nav').onePageNav({
+                scrollOffset: 85,
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#nav2').onePageNav({
                 scrollOffset: 85,
             });
         });

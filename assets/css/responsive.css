@@ -1040,7 +1040,138 @@
 
 
 /* SM Small Device :320px. */
-@media only screen and (min-width: 320px) and (max-width: 767px) {}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    .header__menu {
+        display: none;
+    }
+
+    .menu-open {
+        display: block;
+    }
+
+    .header__logo a svg {
+        width: 145px;
+        height: 50px;
+    }
+
+    .header__main__blk {
+        padding: 0px 8px;
+    }
+
+    .header__area {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .hero__main__blk {
+        display: flex;
+        gap: 0;
+        flex-direction: column-reverse;
+    }
+
+    .hero__right__blk {
+        top: 0;
+    }
+
+    #exampleCanvas {
+        width: 90%;
+    }
+
+    #myCanvasContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero__content h1 {
+        margin-bottom: 6px;
+        font-size: 40px;
+    }
+
+    .hero__content p {
+        font-size: 11px;
+        text-align: left;
+    }
+
+    .hero__btn a {
+        width: 126px;
+        height: 46px;
+        font-size: 12px;
+        border-radius: 2px;
+    }
+
+    .hero__socials a {
+        font-size: 16px;
+    }
+
+    .hero__widgets {
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .hero__scroll a {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .hero__scroll a img {
+        width: 22px;
+    }
+
+    .hero__area {
+        padding-top: 80px;
+        padding-bottom: 22px;
+    }
+
+    .hero__scroll {
+        right: 3%;
+        bottom: 48%;
+    }
+
+    .brand__single__slide {
+        height: 70px;
+        padding: 12px;
+    }
+
+    .service__area {
+        padding-top: 24px;
+        padding-bottom: 40px;
+    }
+
+    .service__sp3 {
+        top: -52px;
+        max-width: 100%;
+        width: 76%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 

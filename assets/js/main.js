@@ -10,7 +10,7 @@
             $('.offcanvas-area , .offcanvas-overlay').addClass('active');
         });
 
-        $('.menu-close , .offcanvas-overlay').click(function () {
+        $('.menu-close , .offcanvas-overlay, .main-menu ul li a, .offcanvas-btn a').click(function () {
             $('.offcanvas-area , .offcanvas-overlay').removeClass('active');
         });
 
@@ -98,7 +98,7 @@
             autoplayHoverPause: false,
             responsive: {
                 0: {
-                    items: 2
+                    items: 3
                 },
                 600: {
                     items: 5
