@@ -65,12 +65,13 @@ a {
 /*-------------------- Scroll Bar css start --------------------*/
 
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 8px;
     background-color: #00023E;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #08b9f7;
+    border-radius: 30px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -79,7 +80,7 @@ a {
 
 html {
     scrollbar-color: #08b9f7 #00023E;
-    scrollbar-width: thin;
+    scrollbar-width: 8px;
     scroll-behavior: smooth;
 }
 
