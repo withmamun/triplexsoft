@@ -1124,8 +1124,8 @@
     }
 
     .hero__scroll {
-        right: 3%;
-        bottom: 48%;
+        right: -30px;
+        bottom: 54%;
     }
 
     .brand__single__slide {
