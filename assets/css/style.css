@@ -1477,6 +1477,10 @@ html {
     color: #fff;
 }
 
+.contact__form .form-floating>label:focus {
+    color: #000;
+}
+
 .contact__form .form-floating {
     margin-bottom: 24px;
 }
