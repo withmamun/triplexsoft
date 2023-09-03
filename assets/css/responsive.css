@@ -1337,7 +1337,7 @@
     }
 
     .testimonial__content h4 {
-        margin-bottom: 15px;
+        margin-bottom: 7px;
         font-size: 24px;
     }
 
@@ -1513,6 +1513,51 @@
     .container-xl,
     .container-xxl {
         max-width: 540px;
+    }
+
+    #exampleCanvas {
+        width: 65%;
+    }
+
+    .brand__area .container {
+        max-width: 500px;
+    }
+
+    .service__sp3 {
+        width: 64%;
+    }
+
+    .feature__area .container {
+        max-width: 500px;
+    }
+
+    .portfolio__main__blk {
+        width: 80%;
+    }
+
+    .feature__topbar p {
+        max-width: 95%;
+    }
+
+    .portfolio__single__slide {
+        height: 130px;
+    }
+
+    .testimonial__single__slide {
+        min-height: 375px;
+    }
+
+    .faq__area .container {
+        max-width: 500px;
+    }
+
+    .contact__address ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .testimonial__content h4 {
+        font-size: 18px;
     }
 
 }
