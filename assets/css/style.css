@@ -901,13 +901,23 @@ html {
     height: 230px;
     border-radius: 10px;
     overflow: hidden;
-    background-image: url(../img/service/thumb.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.service__imgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service__imgs {
+    width: 100%;
+    height: 100%;
 }
 
 .service__video a {
@@ -917,7 +927,7 @@ html {
 }
 
 .service__video a:hover {
-    color: #3100FF;
+    color: #0087ff;
 }
 
 .service__sp1 {
@@ -1475,10 +1485,6 @@ html {
 
 .contact__form .form-floating>label {
     color: #fff;
-}
-
-.contact__form .form-floating>label:focus {
-    color: #000;
 }
 
 .contact__form .form-floating {
