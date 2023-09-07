@@ -87,6 +87,39 @@ html {
 /*-------------------- Scroll Bar css end --------------------*/
 
 
+/*-------------------- Cursor css start --------------------*/
+
+.cursor {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #c6c6c6;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .1s;
+    z-index: 999;
+}
+
+.cursor2 {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: #c6c6c6;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .15s;
+    z-index: 999;
+}
+
+/*-------------------- Cursor css end --------------------*/
+
+
 /*-------------------- Offcanvas area css start --------------------*/
 
 .menu-close {
